@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyShop — Statybinės medžiagos ir įrankiai</title>
+  <meta name="description" content="MyShop – profesionalūs įrankiai, statybinės medžiagos ir buitinės prekės už geriausias kainas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container">
+    <a href="#" class="navbar-logo"><span>My</span>Shop</a>
+
+    <div class="search-box">
+      <form>
+        <input type="text" placeholder="Ieškoti prekių..." />
+        <button type="submit">Ieškoti</button>
+      </form>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Prekės</a></li>
+      <li><a href="#">🛒 Krepšelis</a></li>
+      <li><a href="#">👤 Prisijungti</a></li>
+      <li><a href="#">✏️ Registracija</a></li>
+    </ul>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Atidaryti meniu">☰</button>
+  </div>
+
+  <div class="container">
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="search-mobile">
+        <input type="text" placeholder="Ieškoti prekių..." />
+        <button type="button">Ieškoti</button>
+      </div>
+      <ul>
+        <li><a href="#">Prekės</a></li>
+        <li><a href="#">🛒 Krepšelis</a></li>
+        <li><a href="#">👤 Prisijungti</a></li>
+        <li><a href="#">✏️ Registracija</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <img src="img/hero-banner.jpg" alt="Savaitės akcijos — įrankiai ir medžiagos" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-badge">Akcija</span>
+        <h1>Savaitės pasiūlymai</h1>
+        <p>Profesionalūs įrankiai ir medžiagos už geriausias kainas. Ribotą laiką!</p>
+        <a href="#" class="btn-primary">Peržiūrėti prekes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="categories">
+  <div class="container">
+    <h2>Kategorijos</h2>
+    <div class="category-grid">
+      <a href="#" class="category-card">
+        <div class="category-icon">🔨</div>
+        <span>Statybinės medžiagos</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">🚿</div>
+        <span>Santechnika</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">🎨</div>
+        <span>Dažai</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">🔧</div>
+        <span>Elektriniai įrankiai</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">🌲</div>
+        <span>Sodo prekės</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">🔩</div>
+        <span>Tvirtinimo detalės</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">💡</div>
+        <span>Apšvietimas</span>
+      </a>
+      <a href="#" class="category-card">
+        <div class="category-icon">🏠</div>
+        <span>Buitis</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECOMMENDED PRODUCTS ===== -->
+<section class="products">
+  <div class="container">
+    <h2>Rekomenduojamos prekės</h2>
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-1.jpg" alt="Akumuliatorinis gręžtuvas 20V" />
+          <span class="product-badge">AKCIJA</span>
+        </div>
+        <div class="product-info">
+          <h3>Akumuliatorinis gręžtuvas 20V</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€89,99</span>
+            <span class="old-price">€129,99</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-2.jpg" alt="Vidaus sienų dažai 10L" />
+        </div>
+        <div class="product-info">
+          <h3>Vidaus sienų dažai 10L</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€34,50</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-3.jpg" alt="LED lubų šviestuvas" />
+          <span class="product-badge">AKCIJA</span>
+        </div>
+        <div class="product-info">
+          <h3>LED lubų šviestuvas</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€45,00</span>
+            <span class="old-price">€59,99</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-4.jpg" alt="Sodo žarna 30m Premium" />
+        </div>
+        <div class="product-info">
+          <h3>Sodo žarna 30m Premium</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€27,90</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-5.jpg" alt="Reguliuojamų raktų rinkinys" />
+        </div>
+        <div class="product-info">
+          <h3>Reguliuojamų raktų rinkinys</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€19,95</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-6.jpg" alt="Laminuotos grindys „Ąžuolas"" />
+          <span class="product-badge">AKCIJA</span>
+        </div>
+        <div class="product-info">
+          <h3>Laminuotos grindys „Ąžuolas"</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€24,99</span>
+            <span class="old-price">€32,00</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-7.jpg" alt="Išmanusis termostatas WiFi" />
+        </div>
+        <div class="product-info">
+          <h3>Išmanusis termostatas WiFi</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€119,00</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/product-8.jpg" alt="Apsauginės darbo pirštinės" />
+        </div>
+        <div class="product-info">
+          <h3>Apsauginės darbo pirštinės</h3>
+          <div class="stars">
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="price-row">
+            <span class="price">€12,50</span>
+          </div>
+          <button class="btn-cart">🛒 Į krepšelį</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Pagalba</h4>
+        <ul>
+          <li><a href="#">Pagalbos centras</a></li>
+          <li><a href="#">Grąžinimai</a></li>
+          <li><a href="#">Pristatymo informacija</a></li>
+          <li><a href="#">Užsakymo sekimas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Apie mus</h4>
+        <ul>
+          <li><a href="#">Mūsų istorija</a></li>
+          <li><a href="#">Karjera</a></li>
+          <li><a href="#">Naujienos</a></li>
+          <li><a href="#">Tvarumas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Teisinė informacija</h4>
+        <ul>
+          <li><a href="#">Privatumo politika</a></li>
+          <li><a href="#">Naudojimo sąlygos</a></li>
+          <li><a href="#">Slapukų politika</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontaktai</h4>
+        <ul>
+          <li>info@myshop.lt</li>
+          <li>+370 600 12345</li>
+          <li>Pr–Š: 8:00–20:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 MyShop. Visos teisės saugomos.
+    </div>
+  </div>
+</footer>
+
+<!-- Minimal JS for mobile menu toggle -->
+<script>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    this.textContent = this.textContent === '☰' ? '✕' : '☰';
+  });
+</script>
+
+</body>
+</html>
