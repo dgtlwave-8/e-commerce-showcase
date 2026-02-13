@@ -1,20 +1,20 @@
-import { Wrench, Paintbrush, Droplets, Zap, TreePine, LayoutGrid, Lightbulb, Hammer } from "lucide-react";
+import { Hammer, Droplets, Paintbrush, Wrench, TreePine, Nut, Lightbulb, Home } from "lucide-react";
 
 const categories = [
-  { name: "Power Tools", icon: Wrench },
-  { name: "Paint", icon: Paintbrush },
-  { name: "Plumbing", icon: Droplets },
-  { name: "Electrical", icon: Zap },
-  { name: "Garden", icon: TreePine },
-  { name: "Flooring", icon: LayoutGrid },
-  { name: "Lighting", icon: Lightbulb },
-  { name: "Building", icon: Hammer },
+  { name: "Statybinės medžiagos", icon: Hammer },
+  { name: "Santechnika", icon: Droplets },
+  { name: "Dažai", icon: Paintbrush },
+  { name: "Elektriniai įrankiai", icon: Wrench },
+  { name: "Sodo prekės", icon: TreePine },
+  { name: "Tvirtinimo detalės", icon: Nut },
+  { name: "Apšvietimas", icon: Lightbulb },
+  { name: "Buitis", icon: Home },
 ];
 
 const CategoryGrid = () => {
   return (
     <section className="container mx-auto px-4 py-10">
-      <h2 className="font-display text-2xl font-bold mb-6">Shop by Category</h2>
+      <h2 className="font-display text-2xl font-bold mb-6">Kategorijos</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
         {categories.map((cat) => (
           <a
